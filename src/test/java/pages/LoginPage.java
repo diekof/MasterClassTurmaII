@@ -1,12 +1,11 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import util.Helper;
 
-public class LoginPage {
+public class LoginPage{
 
     @FindBy(id = "vCLIENTE")
     private WebElement selectCliente;
@@ -18,6 +17,9 @@ public class LoginPage {
     private WebElement btnEntrar;
 
     private String tituloPagina = "Principal";
+
+    @FindBy(className = "TableHeaderText")
+    private WebElement textoUsuarioLogado;
 
     private Helper helper = new Helper();
 
@@ -40,6 +42,7 @@ public class LoginPage {
     }
 
     public void checaTituloPagina() {
-        helper.checaTituloPagina("Principal");
+        if(helper.isVisible(textoUsuarioLogado,""))
+            helper.checaTituloPagina(tituloPagina);
     }
 }

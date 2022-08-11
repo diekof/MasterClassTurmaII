@@ -5,8 +5,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.slf4j.Logger;
 
 import java.util.concurrent.TimeUnit;
+import java.util.logging.LogManager;
 
 public class BasePage {
 
@@ -16,7 +18,7 @@ public class BasePage {
         driver = webdriver;
     }
 
-    public void openChrome(){
+    public static void openChrome(){
         System.setProperty("webdriver.chrome.driver","C:\\Des\\arquivos\\chromedriver.exe");
         driver = new ChromeDriver();
     }
@@ -29,11 +31,11 @@ public class BasePage {
         driver.quit();
         driver = null;
     }
-    public void openEdge(){
+    public static void openEdge(){
         driver = new EdgeDriver();
     }
 
-    public void openSession(String navegador){
+    public static void openSession(String navegador){
         switch (navegador){
             case "chrome":
                 openChrome();

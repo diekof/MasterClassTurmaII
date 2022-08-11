@@ -1,23 +1,22 @@
 package util;
 
+import cucumber.runtime.junit.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.asserts.Assertion;
 import pages.BasePage;
 
-public class Helper {
+public class Helper extends BasePage {
 
     private long timeSlice = 15;
     private long tentativas = 0;
     public static final Boolean NOT_EXCEPTION = true;
     public static final Boolean EXCEPTION = true;
-
-    public Helper() {
-        PageFactory.initElements(BasePage.getDriver(), this);
-    }
 
     public void preencherCampo(WebElement campoInput, String campoValor){
         if(isVisible(campoInput,"")){
@@ -58,7 +57,9 @@ public class Helper {
         }
     }
 
-    public void checaTituloPagina(String tituloPagina) {
-        boolean isPagina = BasePage.getDriver().getTitle().contains(tituloPagina);
+    public void checaTituloPagina(String expectedTitulo) {
+        String tituloObtido = getDriver().getTitle();
+        Assert.assertEquals(tituloObtido,expectedTitulo);
     }
+
 }
