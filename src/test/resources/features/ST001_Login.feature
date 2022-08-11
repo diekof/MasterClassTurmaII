@@ -1,7 +1,8 @@
 #language: pt
 #encoding: utf-8
 
-@smoke
+@smoke @TestNG
+@severity=blocker
 Funcionalidade: Login
 
   Cenario: Login com sucesso

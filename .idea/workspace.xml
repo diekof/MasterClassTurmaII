@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd26899f-df5f-437e-a0e8-bea566501d83" name="Changes" comment="ajustes iniciais">
+    <list default="true" id="cd26899f-df5f-437e-a0e8-bea566501d83" name="Changes" comment="ajustes tela de login e input de valores">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/actions/LoginActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/LoginActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/functionalities/LoginFuncionalities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/functionalities/LoginFuncionalities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/util/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/util/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/util/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/util/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ST001_Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ST001_Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660170734725</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ajustes tela de login e input de valores">
+      <created>1660188511927</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660188511927</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,7 +143,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ajustes iniciais" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajustes iniciais" />
+    <MESSAGE value="ajustes tela de login e input de valores" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustes tela de login e input de valores" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
