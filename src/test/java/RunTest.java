@@ -6,8 +6,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"steps","util"},
-        format = {"pretty", "html:target/cucumber-report", "json:target/cucumber.json"},
-        tags = "@smoke"
+        format = {"pretty", "html:target/cucumber-report", "json:target/cucumber.json"}
 )
 public class RunTest {
 }
