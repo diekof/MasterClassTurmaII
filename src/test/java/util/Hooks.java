@@ -33,6 +33,6 @@ public class Hooks {
         System.out.println(cenario.getName());
         System.out.println(cenario.getStatus());
         System.out.println("Suite Tear Down");
-        new BasePage().getDriver().close();
+//        new BasePage().getDriver().close();
     }
 }

@@ -13,7 +13,7 @@ public class LoginStep {
 
     @Dado("^que o cliente esteja na tela de login do municipio de \"([^\"]*)\"\\.$")
     public void que_o_cliente_esteja_na_tela_de_login_do_municipio(String arg1) throws Throwable {
-        loginFuncionalities.goToLogin();
+        loginFuncionalities.goToLogin(arg1);
     }
 
     @Quando("^realizo o login com o usuário \"([^\"]*)\" e senha \"([^\"]*)\"\\.$")
@@ -23,7 +23,7 @@ public class LoginStep {
 
     @Então("^devo ver a página home\\.$")
     public void devo_ver_a_página_home() throws Throwable {
-        System.out.println("devo_ver_a_página_home");
+        loginFuncionalities.doChecaTituloPagina();
     }
 
 }

@@ -7,17 +7,18 @@ import pages.LoginPage;
 public class LoginActions {
 
     BasePage basePage = new BasePage();
-
-    public void goToLogin(){
+    LoginPage loginPage = new LoginPage();
+    public void goToLogin(String cliente){
         basePage.openUrl("https://wf.coplan.inf.br/educacao/servlet/login");
-//        new BasePage().openUrl("https://wf.coplan.inf.br/educacao/servlet/login");
+        loginPage.selecionarCliente(cliente);
     }
     public void loginAndSenha(String login, String senha){
-        LoginPage loginPage = new LoginPage();
-//        loginPage = PageFactory.initElements(BasePage.getDriver(), LoginPage.class);
         loginPage.inserirLogin(login);
         loginPage.inserirSenha(senha);
         loginPage.clicarEntrar();
     }
 
+    public void checaTituloPagina() {
+        loginPage.checaTituloPagina();
+    }
 }

@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.BasePage;
 
@@ -31,6 +32,12 @@ public class Helper {
     public boolean isVisible(WebElement webElement, String text){
         return isView(webElement, text, EXCEPTION);
     }
+    public void selecionaCampo(WebElement campoSelect, String text){
+        if(isVisible(campoSelect,"")){
+            Select sel = new Select(campoSelect);
+            sel.selectByVisibleText(text);
+        }
+    }
 
     protected boolean isView(WebElement webElement, String text, Boolean hasException){
         try{
@@ -51,4 +58,7 @@ public class Helper {
         }
     }
 
+    public void checaTituloPagina(String tituloPagina) {
+        boolean isPagina = BasePage.getDriver().getTitle().contains(tituloPagina);
+    }
 }
