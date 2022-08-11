@@ -3,11 +3,13 @@ package functionalities;
 import actions.LoginActions;
 
 public class LoginFuncionalities {
+
+    LoginActions loginActions = new LoginActions();
     public void goToLogin(){
-        new LoginActions().goToLogin();
+        loginActions.goToLogin();
     }
     public void doLogin(String login, String senha){
-        new LoginActions().loginAndSenha(login, senha);
+        loginActions.loginAndSenha(login, senha);
     }
 
 }

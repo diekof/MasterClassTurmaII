@@ -10,16 +10,27 @@ public class LoginPage {
 
     @FindBy(id="vUSUARIO_LOGIN")
     private WebElement inputLogin;
-
     @FindBy(id="vUSUARIO_SENHA")
     private WebElement inputSenha;
+    @FindBy(id = "BTNENTER")
+    private WebElement btnEntrar;
+
+    private Helper helper = new Helper();
+
+    public LoginPage() {
+        PageFactory.initElements(BasePage.getDriver(), this);
+    }
 
     public void inserirLogin(String login){
-        inputLogin.sendKeys(login);
+        helper.preencherCampo(inputLogin,login);
     }
 
     public void inserirSenha(String senha){
-        inputSenha.sendKeys(senha);
+        helper.preencherCampo(inputSenha,senha);
+    }
+
+    public void clicarEntrar(){
+        helper.clicarBotao(btnEntrar);
     }
 
 }

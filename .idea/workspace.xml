@@ -4,25 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd26899f-df5f-437e-a0e8-bea566501d83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RunTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/actions/LoginActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/functionalities/LoginFuncionalities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/AlunoStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/util/Helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/util/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cucumber.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ST001_Login.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ST002_Aluno.feature" afterDir="false" />
+    <list default="true" id="cd26899f-df5f-437e-a0e8-bea566501d83" name="Changes" comment="ajustes iniciais">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/actions/LoginActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/LoginActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/functionalities/LoginFuncionalities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/functionalities/LoginFuncionalities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/util/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/util/Helper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +112,14 @@
       <option name="presentableId" value="Default" />
       <updated>1656166420750</updated>
     </task>
+    <task id="LOCAL-00001" summary="ajustes iniciais">
+      <created>1660170734725</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660170734725</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +132,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ajustes iniciais" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustes iniciais" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

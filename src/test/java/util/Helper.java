@@ -2,6 +2,7 @@ package util;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.BasePage;
@@ -12,10 +13,21 @@ public class Helper {
     private long tentativas = 0;
     public static final Boolean NOT_EXCEPTION = true;
     public static final Boolean EXCEPTION = true;
-    public void setCampoInput(WebElement campoInput, String campoValor){
-        BasePage.getDriver().findElement(By.id("vUSUARIO_LOGIN")).sendKeys("02312712121");
+
+    public Helper() {
+        PageFactory.initElements(BasePage.getDriver(), this);
     }
 
+    public void preencherCampo(WebElement campoInput, String campoValor){
+        if(isVisible(campoInput,"")){
+            campoInput.sendKeys(campoValor);
+        }
+    }
+    public void clicarBotao(WebElement botao){
+        if(isVisible(botao,"")){
+            botao.click();
+        }
+    }
     public boolean isVisible(WebElement webElement, String text){
         return isView(webElement, text, EXCEPTION);
     }
