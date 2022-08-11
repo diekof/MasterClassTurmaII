@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd26899f-df5f-437e-a0e8-bea566501d83" name="Changes" comment="">
+    <list default="true" id="cd26899f-df5f-437e-a0e8-bea566501d83" name="Changes" comment="asjuste de campos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/actions/LoginActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/LoginActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/functionalities/LoginFuncionalities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/functionalities/LoginFuncionalities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/util/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/util/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/util/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/util/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ST001_Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ST001_Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660192304622</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="asjuste de campos">
+      <created>1660250359283</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660250359283</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,7 +155,8 @@
     <MESSAGE value="ajustes iniciais" />
     <MESSAGE value="ajustes tela de login e input de valores" />
     <MESSAGE value="inserção allure" />
-    <option name="LAST_COMMIT_MESSAGE" value="inserção allure" />
+    <MESSAGE value="asjuste de campos" />
+    <option name="LAST_COMMIT_MESSAGE" value="asjuste de campos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -166,5 +167,8 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MasterClassTurmaII$RunTest.ic" NAME="RunTest Coverage Results" MODIFIED="1660252375059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

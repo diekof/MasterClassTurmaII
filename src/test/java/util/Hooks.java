@@ -15,24 +15,21 @@ public class Hooks {
         BasePage basepage = new BasePage();
         basepage.openSession("chrome");
     }
-    @After(order = 0)
-    public void tearDown(Scenario scenario) {
-        try {
-            String screenshotName = scenario.getName().replaceAll("", "_");
-            if (scenario.isFailed()) {
-                TakesScreenshot ts = (TakesScreenshot) new BasePage().getDriver();
-                byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
+//    @After(order = 0)
+//    public void tearDown(Scenario scenario) {
+//        try {
+//            String screenshotName = scenario.getName().replaceAll("", "_");
+//            if (scenario.isFailed()) {
+//                TakesScreenshot ts = (TakesScreenshot) new BasePage().getDriver();
+//                byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
 //                scenario.attach(screenshot, "img/png", screenshotName);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
     @After(order = 1)
     public static void suiteTearDown(Scenario cenario) {
-        System.out.println(cenario.getName());
-        System.out.println(cenario.getStatus());
-        System.out.println("Suite Tear Down");
-//        new BasePage().getDriver().close();
+        new BasePage().getDriver().close();
     }
 }
