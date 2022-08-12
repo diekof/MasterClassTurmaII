@@ -1,5 +1,6 @@
 package util;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,7 +18,10 @@ public class Helper extends BasePage {
     public void preencherCampo(WebElement campoInput, String campoValor){
         if(isVisible(campoInput,"")){
             campoInput.sendKeys(campoValor);
-//            campoInput.sendKeys();
+
+            WebDriverWait esperar = new WebDriverWait(getDriver(), this.timeSlice);
+            esperar.until(ExpectedConditions.textToBePresentInElementValue(campoInput,campoValor));
+
             String textoInserido = campoInput.getAttribute("value");
             if(textoInserido.isEmpty()){
                 if(++tentativas >= 3){
@@ -45,13 +49,13 @@ public class Helper extends BasePage {
     }
     protected boolean isView(WebElement webElement, Boolean hasException){
         try{
-            WebDriverWait esperar = new WebDriverWait(BasePage.getDriver(), this.timeSlice);
+            WebDriverWait esperar = new WebDriverWait(getDriver(), this.timeSlice);
             esperar.until(ExpectedConditions.visibilityOfAllElements(webElement));
             return webElement.isDisplayed();
         } catch (Exception e) {
-            if(!hasException) {
-                return false;
-            }
+//            if(!hasException) {
+//                return false;
+//            }
             if(++tentativas >= 3){
                 tentativas = 0;
                 throw new RuntimeException("Elemento não encontrado.");
@@ -63,5 +67,11 @@ public class Helper extends BasePage {
         String tituloObtido = getDriver().getTitle();
         Assert.assertEquals(tituloObtido,expectedTitulo);
     }
-
+    public boolean isTelaLogin(){
+        return getDriver().getTitle().equals("Sistema de Gestão Educacional - Gextec");
+    }
+    public void esperaPaginaSerCarregada(){
+        WebDriverWait esperar = new WebDriverWait(BasePage.getDriver(), 60);
+        esperar.until(driver -> ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete"));
+    }
 }

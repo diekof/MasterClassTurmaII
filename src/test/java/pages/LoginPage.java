@@ -46,4 +46,20 @@ public class LoginPage{
         if(helper.isVisible(textoUsuarioLogado,""))
             helper.checaTituloPagina(tituloPagina);
     }
+    public void loginWith(String cliente, String login, String senha){
+        if(!helper.isTelaLogin())
+            abreTelaDeLogin();
+
+        selecionarCliente(cliente);
+        inserirLogin(login);
+        inserirSenha(senha);
+        clicarEntrar();
+        helper.esperaPaginaSerCarregada();
+        checaTituloPagina();
+
+    }
+
+    public void abreTelaDeLogin() {
+        helper.openUrl("https://wf.coplan.inf.br/educacao/servlet/login");
+    }
 }

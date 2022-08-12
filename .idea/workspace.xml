@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd26899f-df5f-437e-a0e8-bea566501d83" name="Changes" comment="asjuste de campos">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/web.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/actions/LoginActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/LoginActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/functionalities/LoginFuncionalities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/functionalities/LoginFuncionalities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AlunoStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AlunoStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/util/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/util/Helper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/util/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/util/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/ST001_Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ST001_Login.feature" afterDir="false" />
@@ -71,6 +76,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Feature: ST002_Aluno" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ST002_Aluno.feature" />
+      <option name="GLUE" value="util steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="MasterClassTurmaII" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: ST002_Aluno" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Login com sucesso" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ST001_Login.feature" />
@@ -102,6 +126,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RunTest" />
+        <item itemvalue="Cucumber Java.Feature: ST002_Aluno" />
         <item itemvalue="Cucumber Java.Feature: ST001_Login" />
         <item itemvalue="Cucumber Java.Scenario: Login com sucesso" />
       </list>

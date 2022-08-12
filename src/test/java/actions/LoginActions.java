@@ -9,11 +9,10 @@ public class LoginActions {
     BasePage basePage = new BasePage();
     LoginPage loginPage = new LoginPage();
     public void goToLogin(String cliente){
-        basePage.openUrl("https://wf.coplan.inf.br/educacao/servlet/login");
+        loginPage.abreTelaDeLogin();
         loginPage.selecionarCliente(cliente);
     }
     public void loginAndSenha(String login, String senha){
-        System.out.println("login: "+login);
         loginPage.inserirLogin(login);
         loginPage.inserirSenha(senha);
         loginPage.clicarEntrar();
@@ -21,5 +20,9 @@ public class LoginActions {
 
     public void checaTituloPagina() {
         loginPage.checaTituloPagina();
+    }
+
+    public void loginWith(String cliente, String login, String senha) {
+        loginPage.loginWith(cliente, login, senha);
     }
 }

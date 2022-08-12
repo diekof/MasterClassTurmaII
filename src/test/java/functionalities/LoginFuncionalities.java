@@ -15,4 +15,8 @@ public class LoginFuncionalities {
         loginActions.checaTituloPagina();
     }
 
+    public void doLoginWith(String cliente, String login, String senha){
+        loginActions.loginWith(cliente, login, senha);
+    }
+
 }

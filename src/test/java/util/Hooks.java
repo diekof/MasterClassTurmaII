@@ -9,7 +9,7 @@ public class Hooks extends BasePage{
 
     @Before(order = 0)
     public static void suiteSetup(Scenario cenario) {
-        openSession("chrome");
+        openSession("chrome",false);
     }
 
     @After(order = 1)

@@ -10,7 +10,10 @@ import functionalities.LoginFuncionalities;
 public class LoginStep {
 
     LoginFuncionalities loginFuncionalities = new LoginFuncionalities();
-
+    @Dado("^que já esteja logado no cliente \"([^\"]*)\" com o cpf \"([^\"]*)\" e a senha \"([^\"]*)\"\\.$")
+    public void loginWith(String arg1,String arg2,String arg3) throws Throwable {
+        loginFuncionalities.doLoginWith(arg1, arg2, arg3);
+    }
     @Dado("^que o cliente esteja na tela de login do municipio de \"([^\"]*)\"\\.$")
     public void que_o_cliente_esteja_na_tela_de_login_do_municipio(String arg1) throws Throwable {
         loginFuncionalities.goToLogin(arg1);
