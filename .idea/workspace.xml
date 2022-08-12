@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="cd26899f-df5f-437e-a0e8-bea566501d83" name="Changes" comment="asjuste de campos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/actions/LoginActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/LoginActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/util/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/util/Helper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/util/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/util/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ST001_Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ST001_Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ST002_Aluno.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ST002_Aluno.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

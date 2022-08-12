@@ -1,6 +1,6 @@
 #language: pt
 #encoding: utf-8
-
+@smoke
 Funcionalidade: Manutenção de aluno
 
   Cenario: Cadastro de um novo aluno com sucesso

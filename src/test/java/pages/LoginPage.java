@@ -30,6 +30,7 @@ public class LoginPage{
         helper.selecionaCampo(selectCliente,cliente);
     }
     public void inserirLogin(String login){
+        System.out.println("inserirLogin: "+login);
         helper.preencherCampo(inputLogin,login);
     }
 

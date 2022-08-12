@@ -13,6 +13,7 @@ public class LoginActions {
         loginPage.selecionarCliente(cliente);
     }
     public void loginAndSenha(String login, String senha){
+        System.out.println("login: "+login);
         loginPage.inserirLogin(login);
         loginPage.inserirSenha(senha);
         loginPage.clicarEntrar();
