@@ -2,7 +2,7 @@
 #encoding: utf-8
 
 
-@smoke
+@login @smoke
 Funcionalidade: Login
   @login
   Cenario: Login com sucesso

@@ -7,13 +7,14 @@ import pages.BasePage;
 
 public class Hooks extends BasePage{
 
-    @Before(order = 0)
+    @Before()
     public static void suiteSetup(Scenario cenario) {
         openSession("chrome",false);
     }
 
-    @After(order = 1)
+    @After()
     public static void suiteTearDown(Scenario cenario) {
         close();
     }
+
 }

@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pages.BasePage;
 
+import java.time.Duration;
+
 
 public class Helper extends BasePage {
     private long timeSlice = 45;
@@ -16,22 +18,27 @@ public class Helper extends BasePage {
     public static final Boolean NOT_EXCEPTION = true;
     public static final Boolean EXCEPTION = true;
     public void preencherCampo(WebElement campoInput, String campoValor){
-        if(isVisible(campoInput,"")){
+        if(isVisible(campoInput,"")) {
+            String textoInseridoRetorno = getInsertValue(campoInput, campoValor);
+            Assert.assertEquals(textoInseridoRetorno,campoValor);
+        }
+    }
+    protected String getInsertValue(WebElement campoInput, String campoValor){
             campoInput.sendKeys(campoValor);
-
-            WebDriverWait esperar = new WebDriverWait(getDriver(), this.timeSlice);
-            esperar.until(ExpectedConditions.textToBePresentInElementValue(campoInput,campoValor));
-
             String textoInserido = campoInput.getAttribute("value");
             if(textoInserido.isEmpty()){
-                if(++tentativas >= 3){
+                if(++tentativas >= 4){
                     tentativas = 0;
                     throw new RuntimeException("Elemento não encontrado.");
                 }
-                preencherCampo(campoInput,campoValor);
+                esperaUmTempoAi(2);
+                textoInserido = getInsertValue(campoInput,campoValor);
             }
-            Assert.assertEquals(textoInserido,campoValor);
-        }
+            return textoInserido;
+    }
+    public void esperaUmTempoAi(int tempoSegundos){
+        WebDriverWait esperar = new WebDriverWait(getDriver(), this.timeSlice);
+        esperar.withTimeout(Duration.ofSeconds(tempoSegundos));
     }
     public void clicarBotao(WebElement botao){
         if(isVisible(botao,"")){

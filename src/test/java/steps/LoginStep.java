@@ -1,10 +1,8 @@
 package steps;
 
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Quando;
 import cucumber.api.java.pt.Então;
+import cucumber.api.java.pt.Quando;
 import functionalities.LoginFuncionalities;
 
 public class LoginStep {
